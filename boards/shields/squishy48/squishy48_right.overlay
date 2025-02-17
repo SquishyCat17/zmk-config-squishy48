@@ -1,3 +1,5 @@
+#include <zmk-config-squishy48/boards/shields/squishy48.dtsi>
+
 &right_encoder {
     status = "okay";
 };

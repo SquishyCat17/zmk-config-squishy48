@@ -1,5 +1,6 @@
 #include "squishy48.dtsi"
 
 &left_encoder {
+    
     status = "okay";
 };

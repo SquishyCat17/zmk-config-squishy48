@@ -1,4 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "squishy48-layouts.dtsi"
+
+&physical_layout0 {
+    kscan = <&kscan0>;
+    transform = <&matrix_transform0>;
+    };
 
 /{
     chosen {
@@ -6,10 +12,6 @@
         // Other chosen items  
     };
     
-    &physical_layout0 {
-    kscan = <&kscan0>;
-    transform = <&matrix_transform0>;
-    };
 
     left_encoder: encoder_left {
         compatible = "alps,ec11";

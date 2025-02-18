@@ -15,7 +15,7 @@
 
                 default_layer {
                         //encoder definition
-sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
 // -----------------------------------------------------------------------------------------
 // |  ESC |  Q  |  W  |  E  |  R  |  T  |                |  Y  |  U   |  I  |  O  |  P  | BSPC |
 // | TAB  |  A  |  S  |  D  |  F  |  G  |                |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -31,7 +31,7 @@ sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AC_SCROLL_UP C_AC
                 };
                 lower_layer {
                         //encoder definition
-sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |                                           |  6  |  7  |  8  |  9  |  0  | BSPC |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |                                           |     |     |     |     |     |      |
@@ -47,7 +47,7 @@ sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AC_SCROLL_UP C_AC
 
                 raise_layer {
                         //encoder definition
-sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |                       |  ^  |  &  |  *  |  (  |  )  | BSPC |
 // | CTRL |     |     |     |     |     |                       |  -  |  =  |  [  |  ]  |  \  |  `   |

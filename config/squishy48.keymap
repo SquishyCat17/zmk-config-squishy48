@@ -12,12 +12,21 @@
 
 
 / {
+         behaviors {
+        rot_kp: sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+            tap-ms = <50>;
+        };
+    };
+
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
                         //encoder definition
-sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN <&msc SCRL_UP SCRL_DOWN>;
+sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN &rot_kp SCRL_UP SCRL_DOWN>;
 // -----------------------------------------------------------------------------------------
 // |  ESC |  Q  |  W  |  E  |  R  |  T  |                |  Y  |  U   |  I  |  O  |  P  | BSPC |
 // | TAB  |  A  |  S  |  D  |  F  |  G  |                |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -33,7 +42,7 @@ sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN <&msc SCRL_UP SCRL_DOWN>;
                 };
                 lower_layer {
                         //encoder definition
-sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN <&msc SCRL_UP SCRL_DOWN>;
+sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN &rot_kp SCRL_UP SCRL_DOWN>;
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |                                           |  6  |  7  |  8  |  9  |  0  | BSPC |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |                                           |     |     |     |     |     |      |
@@ -49,7 +58,7 @@ sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN <&msc SCRL_UP SCRL_DOWN>;
 
                 raise_layer {
                         //encoder definition
-sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN <&msc SCRL_UP SCRL_DOWN>;
+sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN &rot_kp SCRL_UP SCRL_DOWN>;
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |                       |  ^  |  &  |  *  |  (  |  )  | BSPC |
 // | CTRL |     |     |     |     |     |                       |  -  |  =  |  [  |  ]  |  \  |  `   |

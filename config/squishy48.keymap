@@ -14,9 +14,10 @@
 / {
          behaviors {
         rot_msc: rotary_scroll {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <200>
                 };
         };
 
@@ -26,7 +27,7 @@
 
                 default_layer {
                         //encoder definition
-sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &rot_msc SCRL_DOWN SCRL_UP>;
+sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &rot_msc>;
 // -----------------------------------------------------------------------------------------
 // |  ESC |  Q  |  W  |  E  |  R  |  T  |                |  Y  |  U   |  I  |  O  |  P  | BSPC |
 // | TAB  |  A  |  S  |  D  |  F  |  G  |                |  H  |  J   |  K  |  L  |  ;  |  '   |

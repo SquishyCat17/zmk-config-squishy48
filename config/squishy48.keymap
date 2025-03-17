@@ -13,7 +13,7 @@
 
 / {
          behaviors {
-        scr_enc: scroll encoder {
+        scr_enc: scroll_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_LEFT>;
